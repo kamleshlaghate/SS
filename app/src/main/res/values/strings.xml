@@ -1,0 +1,483 @@
+<resources>
+    <string name="app_name">TechHub</string>
+    <string name="title_activity_login">Sign in</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password (optional)</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+    <string name="descriptiontxt">•
+      Conditionals are used to perform different computations or actions depending on whether a
+        condition evaluates to true or false.
+
+ <b><i>The if Statement</i></b>
+        \n
+  The if statement is called a conditional control structure because it executes statements when an expression is true.\n For this reason, the if is also known as a decision structure. It takes the form: if (expression)
+  statements
+    The expression evaluates to either true or false, and statements can be a single statement or a code block enclosed by curly braces { }.
+
+ •
+For example:
+
+
+int main()\n
+        {\n
+  int score = 89;\n
+
+  if (score > 75)\n
+    printf("You passed.\n");\n
+
+  return 0;\n
+}
+</string>
+    <string name="nestedif_txt"> <b>  • An if statement can include another if statement to form a nested statement.\n Nesting an if allows a decision to be based on further requirements.
+      Consider the following statement:
+      if (profit > 1000)\n
+        if (clients > 15)\n
+          bonus = 100;\n
+        else\n
+          bonus = 25;\n
+    </b>
+
+    \n
+        • Appropriately indenting nested statements will help clarify the meaning to a reader\n. However, be sure to understand that an else clause is associated with the closest if unless curly braces { } are used to change the association.
+
+   <i> • For example:</i>
+      if (profit > 1000)\n
+        {\n
+        if (clients > 15)\n
+          bonus = 100;\n
+      }\n
+      else\n
+        bonus = 25;\n
+
+
+
+
+
+}</string>
+    <string name="switch_descr"> • The switch statement branches program control by matching the result of an expression with a constant case value.
+
+   \n • The switch statement often provides a more elegant solution to if-else if and nested if statements.
+
+The switch takes the form:\n
+        switch (expression) {\n
+  case val1:\n
+    statements\n
+  break;\n
+  case val2:\n
+    statements\n
+  break;\n
+  default:\n
+    statements\n
+}
+</string>
+    <string name="logoptr">
+
+    <b>• Logical operators  and || are used to form a compound Boolean expression that tests multiple conditions.</b>\n A third logical operator is ! used to reverse the state of a Boolean expression.
+\n
+    • The Operator
+             The logical AND operator  returns a true result only when both expressions are true.\n
+          
+
+    • The statement above joins just two expressions, but logical operators can be used to join multiple expressions.
+A compound Boolean expression is evaluated from left to right. \nEvaluation stops when no further test is needed for determining the result, so be sure to consider the arrangement of operands when one result affects the outcome of a later result.</string>
+    <string name="while_loop">
+    • 
+
+<b>The while statement is called a loop structure because it executes statements repeatedly while an expression is true, looping over and over again. </b>\nIt takes the form: \nwhile (expression) {
+statements\n
+}\n
+
+    • The expression evaluates to either true or false, and statements can be a single statement or, more commonly, a code block enclosed by curly braces { }.\n
+
+    • For example:\n
+
+
+int main() {\n
+int count = 1;\n
+
+while (count!=8) {\n
+printf("Count = %d\n", count);\n
+count++;\n
+}\n
+
+return 0;\n
+}
+</string>
+    <string name="forloop_desc"><b> • The for statement is a loop structure that executes statements a fixed number of times. </b>\n
+It takes the form:\n for (initvalue; condition; increment) {
+statements;\n
+}\n
+
+    • The initvalue is a counter set to an initial value. This part of the for loop is performed only once. \n
+
+    • The condition is a Boolean expression that compares the counter to a value after each loop iteration, stopping the loop when false is returned.\n
+
+    • The increment increases (or decreases) the counter by a set value.
+    </string>
+    <string name="func_desc"><b>Functions are central to C programming and are used to accomplish a program solution as a series of subtasks.</b>
+By now you know that every C program contains a main() function. And you are familiar with the printf() function.\n
+
+You can also create your own functions.\n
+A function:\n
+• is a block of code that performs a specific task\n
+• is reusable\n
+• makes a program easier to test\n
+• can be modified without changing the calling program\n
+
+Even a simple program is easier to understand when main() is broken down into subtasks that are implemented with functions.\n
+     {\n
+int x, result;\n
+
+x = 5;\n
+result = square(x);\n
+printf("%d squared is %d\n", x, result);\n
+
+return 0;\n
+}</string>
+    <string name="rec_fn">
+   <b> • An algorithm for solving a problem may be best implemented using a process called recursion.</b>\n Consider the factorial of a number, which is commonly written as 5! = 5 * 4 * 3 * 2 * 1.
+\nThis calculation can also be thought of as repeatedly calculating num * (num -1) until num is 1.
+
+
+    \n• A recursive function is one that calls itself and includes a base case, or exit condition, for ending the recursive calls. In the case of computing a factorial, the base case is num equal to 1.
+
+
+    \n• For example:\n
+
+
+int factorial(int num);\n
+
+int main() {\n
+int x = 5;\n
+
+printf("The factorial of %d is %d\n", x, factorial(x));\n
+
+return 0;\n
+}\n
+    </string>
+    <string name="Array_desc"> <b>• An array is a data structure that stores a collection of related values that are all the same type.</b>
+
+  \n  • Arrays are useful because they can represent related data with one descriptive name rather than using separate variables that each must be named uniquely.\n
+For example, the array test_scores[25] can hold 25 test scores.
+
+\n    • An array declaration includes the type of the values it stores, an identifier, and square brackets [ ] with a number that indicates the array size.
+
+   \n • For example: int test_scores[25]; /* An array size 25 */
+You can also initialize an array when it is declared, as in the following statement: float prices[5] = {3.2, 6.55, 10.49, 1.25, 0.99};\n
+Note that initial values are separated by commas and placed inside curly braces { }.\n
+An array can be partially initialized, as in: float prices[5] = {3.2, 6.55};\n
+
+</string>
+    <string name="Twodarray_desc">
+
+
+
+   <b> • A two-dimensional array is an array of arrays and can be thought of as a table.</b>\n You can also think of a two-dimensional array as a grid for representing a chess board, city blocks, and much more.
+
+
+   \n • A two-dimensional array declaration indicates the number of number rows and the number of columns.
+
+   \n • For example: int a[2][3]; /* A 2 x 3 array */
+Nested curly braces are used to initialize elements row by row, as in the following statement: int a[2][3] = {\n
+{3, 2, 6},\n
+{4, 5, 20}\n
+};\n
+The same statement can also take the form: int a[2][3] = { {3, 2, 6}, {4, 5, 20} };\n
+    </string>
+    <string name="ptr_desc"> <b> • C is designed to be a low-level language that can easily access memory locations and perform memory-related operations. </b>
+
+  \n  • For instance,\n the scanf() function places the value entered by the user at the location, or address, of the variable. This is accomplished by using the and symbol.
+
+
+
+</string>
+    <string name="func_array">• An array cannot be passed by value to a function. However, an array name is a pointer, so just passing an array name to a function is passing a pointer to the array.
+
+
+    \n• Consider the following program: \n
+int add_up (int *a, int num_elements);\n
+
+int main() {\n
+int orders[5] = {100, 220, 37, 16, 98};\n
+
+printf("Total orders is %d\n", add_up(orders, 5)); \n
+
+return 0;\n
+}\n
+
+int add_up (int *a, int num_elements) {\n
+int total = 0;\n
+int k;\n
+
+
+    </string>
+    <string name="stri"><b>• A string in C is an array of characters that ends with a NULL character .
+</b>      \n A string declaration can be made in several ways, each with its own considerations.\n
+
+    • For example: char str_name[str_len] = "string";\n
+      This creates a string named str_name of str_len characters and initializes it to the value "string".\n
+
+    • When you provide a string literal to initialize the string, the compiler automatically adds a NULL character "\0" to the char array.\n
+       For this reason, you must declare the array size to be at least one character longer than the expected string length.\n
+
+    • The statements below creates strings that include the NULL character. If the declaration does not include a char array size, then it will be calculated based  on  the length of the string in the initialization plus one for "\0":
+</string>
+    <string name="strfunc">
+      <b>  A formatted string can be created with the sprintf() function.</b> This is useful for building a string from other data types.\n
+
+For example: \n
+
+int main()\n
+{\n
+char info[100];\n
+char dept[ ] = "HR";\n
+int emp = 75;\n
+sprintf(info, "The %s dept has %d employees.", dept, emp);\n
+printf("%s\n", info);\n
+
+return 0;\n
+}
+    </string>
+    <string name="funptr"><b>• Since pointers can point to an address in any memory location, they can also point to the start of executable code.</b>
+
+   \n • Pointers to functions, or function pointers, point to executable code for a function in memory.\n Function pointers can be stored in an array or passed as arguments to other functions.
+
+
+    \n• A function pointer declaration uses the * just as you would with any pointer: return_type (*func_name)(parameters)
+
+   \n • The parentheses around (*func_name) are important. Without them, the compiler will think the function is returning a pointer.
+
+
+    \n• After declaring the function pointer, you must assign it to a function.</string>
+    <string name="voidptr">
+        <b>  • A void pointer is used to refer to any address type in memory and has a declaration that looks like:</b>
+ \n    \n   • Void pointers are often used for function declarations.
+
+        \n \n
+For example:void * square (const void *);
+    </string>
+    <string name="structures"><b>• A structure is a user-defined data type that groups related variables of different data types.</b>
+
+
+   \n  • A structure declaration includes the keyword struct, a structure tag for referencing the structure, and curly braces { } with a list of variable declarations called members.
+\n  For example:struct course {\n
+int id;\n
+char title[40];\n
+float hours; \n
+}; </string>
+    <string name="wrkwidstruc"> <b>• The members of a structure may also be structures.</b>
+
+   \n • For example, consider the following statements:\n
+typedef struct {\n
+int x;\n
+int y;\n
+} point;\n
+
+typedef struct {\n
+float radius;\n
+point center;\n
+} circle;\n
+        <b>Pointers to Structures</b>
+
+
+
+   \n • Just like pointers to variables, pointers to structures can also be defined.\n
+
+struct myStruct *struct_ptr;\n
+defines a pointer to the myStruct structure.\n
+
+struct_ptr = address of struct_var;\n
+        stores the address of the structure variable struct_var in the pointer struct_ptr.\n
+
+
+
+
+</string>
+    <string name="union"> <b>• A union allows to store different data types in the same memory location.</b>
+\nIt is like a structure because it has members. \nHowever, a union variable uses the same memory location for all its members and only one member at a time can occupy the memory location.
+
+
+   \n • A union declaration uses the keyword union, a union tag, and curly braces { } with a list of members.
+
+
+  \n  • Union members can be of any data type, including basic types, strings, arrays, pointers, and structures.
+For example:\n
+union val {\n
+int int_num;\n
+float fl_num;\n
+char str[20]; \n
+};
+</string>
+    <string name="workwidunion"><b> • A pointer to a union points to the memory location allocated to the union.</b>
+\nA union pointer is declared by using the keyword union and the union tag along with * and the pointer name.\n
+
+    • For example, consider the following statements:\n
+union val {\n
+int int_num;\n
+float fl_num;\n
+char str[20];\n
+};\n
+
+union val info;\n
+union val *ptr = NULL;\n
+ptr ="  address of info";\n
+        ptr->int_num = 10;\n
+printf("info.int_num is %d", info.int_num);\n
+
+</string>
+    <string name="helloworld">
+    • As when learning any new language, the place to start is with the classic "Hello World!"
+      program:
+
+
+#include stdio.h\n
+int main() {\n
+printf("Hello, World!\n");\n
+return 0;\n
+}\n
+
+
+    • #include stdio.h The function used for generating output is defined in stdio.h.\nIn order to use the printf function, we need to first include the required file, also called a header file.\n
+
+    • int main() The main() function is the entry point to a program.\n Curly brackets { } indicate the beginning and end of a function.</string>
+    <string name="whatiscn">C belongs to the structured, procedural paradigms of languages.\n
+ It is proven, flexible and powerful and may be used for a variety of different applications.\n
+ Although high level, C and assembly language share many of the same attributes.</string>
+    <string name="nextconditionals"> •
+Relational Operators\n
+
+There are six relational operators that can be used to form a Boolean expression, which returns true or false:\n
+&lt; less than\n
+= less than or equal to\n
+> greater than\n
+>= greater than or equal to\n
+== equal to\n
+!= not equal to\n
+
+For example:\n
+int num = 41;\n
+num += 1;\n
+if (num == 42) {\n
+   printf("You won!");\n
+}</string>
+    <string name="nextfunctions">In order to use the square function, we need to declare it. \n
+Declarations usually appear above the main() function and take the form: return_type function_name(parameters); \n
+The return_type is the type of value the function sends back to the calling statement.\n The function_name is followed by parentheses.\n Optional parameter names with type declarations are placed inside the parentheses.
+</string>
+    <string name="nextstrings">
+        char str1[6] = "hello";\n
+char str2[ ] = "world"; /* size 6 */\n
+
+        • String Input\n
+        • Programs are often interactive, asking the user for input.\n
+To retrieve a line of text or other string from the user, C provides the scanf(), gets(), and fgets() functions.\n
+
+    • You can use scanf() to read input according to the format specifiers.\n
+For example: \n
+char first_name[25];\n
+int age;\n
+printf("Enter your first name and age: \n");\n
+scanf("%s %d", first_name, age); \n
+      </string>
+    <string name="nextstructures">Declarations Using Structures\n
+
+    • To declare variables of a structure data type, you use the keyword struct followed by the struct tag, and then the variable name. \n
+
+    • For example, the statements below declares a structure data type and then uses the student struct to declare variables s1 and s2:\n
+struct student {\n
+int age;\n
+int grade;\n
+char name[40];\n
+};</string>
+    <string name="in_output">• <b>The input is stored in the variable a.</b>
+
+\n
+    • The gets() function is used to read input as an ordered sequence of characters, also called a string.\n
+A string is stored in a char array.
+
+
+
+    • Output
+
+    • We use the printf() function to generate output .
+
+putchar() Outputs a single character.
+    \n
+        For example: \n
+
+
+    • #include stdio.h
+
+int main() {\n
+char a = getchar();\n
+
+printf("You entered: ");\n
+putchar(a);\n
+
+return 0;\n
+}
+
+    </string>
+    <string name="comments"><b>• Comments are explanatory information that you can include in a program to benefit the reader of your code.</b> The compiler ignores comments, so they have no affect on a program.
+A comment starts with a slash asterisk /* and ends with an asterisk slash */ and can be anywhere in your code.
+
+    • Comments can be on the same line as a statement, or they can span several lines.
+For example: \n
+#include stdio.h\n
+
+
+int main() {\n
+/* Output a string */\n
+printf("Hello World!");\n
+return 0;\n
+}</string>
+    <string name="operators"><b>C supports arithmetic operators + (addition), - (subtraction), * (multiplication), / (division), and % (modulus division).
+
+    </b> \n • Operators are often used to form a numeric expression such as 10 + 5, which in this case contains two operands and the addition operator.
+Numeric expressions are often used in assignment statements.
+
+    • For example: \n
+#include stdio.h\n
+
+int main() {\n
+int length = 10;\n
+int width = 5;\n
+int area;\n
+
+area = length * width;\n
+printf("%d \n", area); /* 50 */\n
+
+return 0;\n
+}
+</string>
+    <string name="bdatatype"> • Data Types\n
+
+        • C supports the following basic data types: \n
+int: integer, a whole number.\n
+float: floating point, a number with a fractional part.\n
+double: double-precision floating point value.\n
+char: single character.\n
+
+The amount of storage required for each of these types varies by platform.\n
+C has a built-in sizeof operator that gives the memory requirements for a particular data type.\n
+</string>
+    <string name="introc"> • C is a general-purpose programming language that has been around for nearly 50 years. \n
+    • C has been used to write everything from operating systems (including Windows and many others) to complex programs like the Python interpreter, Git, Oracle database, and more. \n
+The versatility of C is by design.\n It is a low-level language that relates closely to the way machines work while still being easy to learn.\n
+
+C belongs to the structured, procedural paradigms of languages.\n
+ It is proven, flexible and powerful and may be used for a variety of different applications.\n
+ Although high level, C and assembly language share many of the same attributes.</string>
+
+
+</resources>

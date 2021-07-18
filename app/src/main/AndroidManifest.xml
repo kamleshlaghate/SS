@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.hp.ss">
+
+    <!-- To auto-complete the email text field in the login form with the user's emails -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.READ_PROFILE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="TECHHUB"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".SignUpActivity" />
+        <activity android:name=".FrontPageActivity" />
+        <activity android:name=".FirstPageActivity" />
+        <activity android:name=".BasicCActivity" />
+        <activity android:name=".LoopCActivity" />
+        <activity android:name=".ArrayCActivity" />
+        <activity android:name=".StringCActivity" />
+        <activity android:name=".StructCActivity" />
+        <activity android:name=".BActivity" />
+        <activity android:name=".LActivity" />
+        <activity android:name=".AActivity" />
+        <activity android:name=".SActivity" />
+        <activity android:name=".StActivity" />
+        <activity android:name=".ComingSoonActivity" />
+        <activity android:name=".HelloActivity" />
+        <activity android:name=".BDataTypeActivity" />
+        <activity android:name=".conditionals" />
+        <activity android:name=".nested_if" />
+        <activity android:name=".switch_stmt" />
+        <activity android:name=".logicoptrs" />
+        <activity android:name=".whileloop" />
+        <activity android:name=".forloop" />
+        <activity android:name=".functions" />
+        <activity android:name=".rec_func" />
+        <activity android:name=".array1" />
+        <activity android:name=".a2Darray" />
+        <activity android:name=".pointers" />
+        <activity android:name=".funcnarray" />
+        <activity android:name=".strings_d" />
+        <activity android:name=".stringfunc" />
+        <activity android:name=".funcptr" />
+        <activity android:name=".voidptr" />
+        <activity android:name=".structures" />
+        <activity android:name=".workwidstruct" />
+        <activity android:name=".union" />
+        <activity android:name=".workwidunions" />
+        <activity android:name=".nextwhatisc" />
+        <activity android:name=".nextconditionals" />
+        <activity android:name=".nextfunctions" />
+        <activity android:name=".nextstrings" />
+        <activity android:name=".nextstructures" />
+        <activity android:name=".in_output" />
+        <activity android:name=".comments" />
+        <activity android:name=".StartingQuizActivity" />
+        <activity android:name=".CertificateActivity" />
+        <activity android:name=".operator" />
+        <activity android:name=".QuizActivity" />
+
+    </application>
+
+</manifest>
